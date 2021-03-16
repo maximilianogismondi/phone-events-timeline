@@ -153,7 +153,8 @@ const isFinalEvent = (e) => {
   return  e.twilio_event_type === ":reservation.rejected" ||
           e.twilio_event_type ===  ":reservation.timeout" ||
           e.twilio_event_type ===  ":reservation.completed" ||
-          e.teravoz_event_type ===  ":call.finished"
+          e.teravoz_event_type ===  ":call.finished" ||
+          e.teravoz_event_type ===  ":actor.left"
           
 }
 
