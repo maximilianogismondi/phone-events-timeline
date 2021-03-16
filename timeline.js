@@ -162,7 +162,7 @@ const generateActorRows = function(actorEvents) {
   console.log(actorEvents);
   return actorEvents.events.map((e, i) => {
     if (actorEvents.events.length > (i+1) && !isFinalEvent(e)) {
-    	console.log(e.twilio_event_type);
+      console.log(e.twilio_event_type);
       let nextEvent = actorEvents.events[i+1];
       let eventType;
       if (actorEvents.provider === "twilio") {
